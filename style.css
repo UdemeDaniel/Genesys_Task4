@@ -1,0 +1,127 @@
+*::before, *, *::after{
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 0;
+}
+
+a, body{color: #373737;}
+
+body, ul {
+    padding: 0;
+    margin: 0;
+    font: 1.3rem/1.2 'Roboto', sans-serif;
+}
+
+h2, p{text-wrap: balance;}
+img{max-width: 100%; display: block;}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: .8em;
+    background-color: #6fc247;
+    color: #fff;    
+    box-shadow: 0 5px 3px #67a349;
+}
+
+.btn,
+.toggle_menu{padding: .5em 1em;border: 1px solid #6fc247;}
+
+.btn:hover,
+.btn:focus,
+.btn-user{color: #6fc247;background-color: #fff;}
+
+.btn-user:hover,
+.btn-user:focus{
+    color: #fff;
+    background-color: #6fc247;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+header{box-shadow: 0 0 7px #373737;}
+header .flex{display: flex; justify-content: space-between; align-items: center;}
+
+.nav{display: none;}
+.d-block{display: block; text-align: center;}
+.nav_list{margin-block: 1em;}
+.nav_item + .nav_item{margin-top: .5em}
+
+.nav_link:hover,
+.nav_link:focus{color: #5ac425;}
+
+header, 
+footer{padding: 1.5em 0;}
+
+.hero,
+.sponsor_text,
+footer{text-align: center;}
+
+.hero{padding-top: 2.5em;}
+
+.hero_title{font-size: 2em;}
+
+section + section{margin-top: 2.5em;}
+
+.hero .cta,
+.sponsors .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4em;
+}
+.hero .cta{margin-bottom: 2em; gap: .5em;}
+
+.sponsors .col-img{
+    height: 117px;
+    width: 211px;
+    background-color: #f9f9f9;
+    margin-top: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us{
+    background-color: #000;
+    color: #fff;
+    padding: 1.5em 0;
+}
+
+.about-us .row{margin-top: 2.5em;}
+.why-us .intro{margin: 0 auto;}
+
+@media (min-width: 1080px) {   
+    .container{width: 75%;}
+    .row,
+    .nav{display: flex; justify-content: space-between; align-items: center;}
+    .col,
+    .nav{width: 100%;}
+
+    .nav_list{display: flex; gap: 1em; margin: 0 auto;}
+    .nav_item + .nav_item{margin: 0;}
+    .toggle_menu{display: none;}
+
+    .about-us .row,
+    .why-us .row{gap: 1.4em;}
+    .intro{width: 80%;}
+
+    .btn-cta{margin-top:0}
+    
+    .hero{padding-top: 4em;}
+    .hero_title{
+        font-size: 2.5em;
+        margin-bottom: .5em;
+    }
+    .hero p{margin-bottom: 1.5em;}
+}
